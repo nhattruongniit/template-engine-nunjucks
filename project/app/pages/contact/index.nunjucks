@@ -1,0 +1,18 @@
+<!-- index.nunjucks -->
+{% extends "./project/app/templates/layout.nunjucks" %}
+{% set path = "../../../images/contact" %}
+
+<!-- index.html -->
+{% block content %}
+
+<h1>This is the contact page</h1>
+<div class="wrapper" id="wrapper">
+   <p class="imgFirst"><img src="{{ path }}/img1.jpg" alt=""></p>
+</div>
+
+
+{% import './project/app/templates/macros/navigation.nunjucks' as nav %} 
+{{nav.active('contact')}}
+
+<!-- Importing Nunjucks Macro -->
+{% endblock %}

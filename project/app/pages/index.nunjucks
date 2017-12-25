@@ -1,0 +1,14 @@
+<!-- index.nunjucks -->
+{% extends "./project/app/templates/layout.nunjucks" %}
+
+
+<!-- index.html -->
+{% block content %}
+
+<h1>This is the index page</h1>
+
+<!-- Importing Nunjucks Macro -->
+{% import './project/app/templates/macros/navigation.nunjucks' as nav %} 
+{{nav.active('home')}}
+
+ {% endblock %}
