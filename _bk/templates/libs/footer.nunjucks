@@ -1,0 +1,21 @@
+<!-- footer.nunjucks -->
+
+<footer class="main-footer">
+Footer          
+</footer>
+
+<script type="text/javascript" src="{{ currentPos }}assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="{{ currentPos }}assets/js/main.js"></script>
+<div class="loading js-loading">
+        <div class="loading_image">
+            <img src="{{ currentPos }}assets/images/common/loading.gif" alt="loading">
+        </div>
+</div>
+{%if currentPage == 'top' %}
+    <script type="text/javascript" src="{{ currentPos }}assets/js/example.js"></script>
+{% endif %}
+
+{%if requestJs == 'Jsfile' %}
+    <script src="{{ currentPos }}assets/js/JsFile.js"></script>
+{% endif %}
+    

@@ -1,0 +1,9 @@
+<!-- index.nunjucks -->
+{% extends "layout.nunjucks" %}
+{% set currentCss = "top" %}
+{% set currentPage = "top" %}
+
+{% block content %}
+<div class="wrapper" id="wrapper">
+       
+{% endblock %}

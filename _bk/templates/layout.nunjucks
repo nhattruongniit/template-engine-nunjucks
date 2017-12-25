@@ -1,0 +1,17 @@
+<!-- layout.nunjucks -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include "libs/head.nunjucks" %}
+
+</head>
+<body class="js-body" id="{{specialPage}}">
+{% include "libs/menu.nunjucks" %}
+
+{% block content %}
+
+{% endblock %}
+{% include "libs/footer.nunjucks" %}
+
+</body>
+</html>

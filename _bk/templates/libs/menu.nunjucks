@@ -1,0 +1,23 @@
+<!-- menu.nunjucks -->
+<header class="main-header">
+            <a href="{{ path }}" class="main-header__logo text__center">
+                <span class="vertical__middle"></span>
+                <img src="{{ currentPos }}assets/images/common/logo__text.png">
+            </a>
+            <div class="toggle-menu">
+                <span class="vertical__middle"></span>
+                <div>
+                    <span class="one"></span>
+                    <span class="two"></span>
+                </div>
+            </div>
+            <div class="menu">
+                 <ul class="clearfix">
+                            <li>
+                                <a href="{{ path }}{{ sub_path }}sendai/">
+                                    <span></span> 仙台<em>SENDAI</em>
+                                </a>
+                            </li>
+                </ul>
+            </div>
+        </header>

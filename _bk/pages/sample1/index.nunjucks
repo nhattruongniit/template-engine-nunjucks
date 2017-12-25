@@ -1,0 +1,15 @@
+<!-- index.nunjucks -->
+{% extends "layout.nunjucks" %}
+{% set currentPos = "../../../" %}
+{% set currentPage = "sendai" %}
+
+{% set currentCss = "report" %} 
+{% set requestJs = "magnificPopup" %} 
+
+{% set specialPage = "" %} 
+
+{% block content %}
+<div class="wrapper" id="wrapper">
+   <p class="imgFirst"><img src="{{ currentPos }}assets/images/report/img1.jpg" alt=""></p>
+</div>
+{% endblock %}

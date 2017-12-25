@@ -1,0 +1,25 @@
+<!-- head.nunjucks -->
+<meta charset="utf-8">
+    <script type="text/javascript">
+        if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+            document.write('<meta name="viewport" content="width=750, user-scalable=no">');
+            var class_devi = 'is_sp';
+        } else {
+            document.write('<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">');
+            var class_devi = 'is_pc';
+        }
+    </script>
+
+    <title>test--test123 | title</title>
+
+    <link rel="shortcut icon" href="{{ currentPos }}images/common/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{{ currentPos }}images/common/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{{ currentPos }}images/common/favicon/apple-touch-icon.png">
+
+    <link href="{{ currentPos }}assets/css/{{ currentCss }}.css" rel="stylesheet" type="text/css">
+    {%if requestJs == 'magnificPopup' %}
+    <link href="{{ currentPos }}assets/css/magnific-popup.css" rel="stylesheet" type="text/css">
+    {% endif %}
+
+
+    
